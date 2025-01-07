@@ -1,4 +1,5 @@
 ##### Windows
+
 # Windows thumbnail cache files
 Thumbs.db
 Thumbs.db:encryptable
@@ -1043,3 +1044,4 @@ dkms.conf
 *.uf2
 # Raspberry Pi Pico disassembler file
 *.dis
+.exercism
