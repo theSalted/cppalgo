@@ -3,7 +3,7 @@
 namespace log_line {
     std::string message(std::string line) {
         // return the messag
-        return line.substr(line.find("]: ") + 3, line.length());
+        return line.substr(line.find("]: ") + 3);
     }
 
     std::string log_level(std::string line) {
