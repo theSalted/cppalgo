@@ -21,4 +21,4 @@ public:
         return result;
     }
 };
-
+// This is such a clever solution, if I came up with this I would feel like a genius
