@@ -3,13 +3,22 @@ class Solution {
 public:
 // Brute force
     int maxArea(vector<int>& heights) {
+        int l = 0;
+        int r = heights.size() - 1;
         int res = 0;
-        for (int i = 0; i < heights.size(); i++) {
-            for (int j = 0; j < heights.size(); j++) {
-                res = max(res, min(heights[i], heights[j]) * (j - i));
-            }   
+
+        while (l < r) {
+            res = max(res, min(heights[l], heights[r]) * (r - l));
+
+            if (heights[l] <= heights[r]) {
+                l++;
+            } else {
+                r--;
+            }
         }
+
         return res;
+
     }
 };
 
