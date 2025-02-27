@@ -1,5 +1,4 @@
-
-[class Solution {
+class Solution {
 public:
     // I solved something just not rpn...
     int evalReverse(vector<string>& tokens) {
